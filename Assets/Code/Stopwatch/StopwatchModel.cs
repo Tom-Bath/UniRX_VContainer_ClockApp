@@ -1,23 +1,22 @@
 using System;
 using UniRx;
 
-namespace Timer
+namespace Stopwatch
 {
-    public class TimerModel
+    public class StopwatchModel
     {
-        private ReactiveProperty<bool> isRunning = new ReactiveProperty<bool>(true);
+        private ReactiveProperty<bool> isRunning = new ReactiveProperty<bool>(false);
         private ReactiveProperty<float> elapsedTime = new ReactiveProperty<float>(0f);
 
         public IReadOnlyReactiveProperty<bool> IsRunning => isRunning;
         public IReactiveProperty<float> ElapsedTime => elapsedTime;
 
-        public void ToggleTimer()
+        public void ToggleStopwatch()
         {
             isRunning.Value = !isRunning.Value;
-            UnityEngine.Debug.Log("isRunning.Value = " + isRunning.Value);
         }
 
-        public void ResetTimer()
+        public void ResetStopwatch()
         {
             isRunning.Value = false;
             elapsedTime.Value = 0f;

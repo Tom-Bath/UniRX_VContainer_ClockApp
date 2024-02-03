@@ -7,19 +7,20 @@ namespace Clock
     public class ClockLifetimeScope : LifetimeScope
     {
         [SerializeField]
-        ClockScreen clockScreen;
+        ClockView clockView;
 
         protected override void Configure(IContainerBuilder builder)
         {
-            builder.Register<ClockService>(Lifetime.Singleton);  
+            Debug.Log("Building Clock");
+
+            builder.Register<ClockModel>(Lifetime.Singleton);  
           
             builder.UseEntryPoints(Lifetime.Singleton, entryPoints =>
             {
-                entryPoints.Add<ClockPresenter>();
-                // Add addional as needed
+                entryPoints.Add<ClockViewModel>();
             });
 
-            builder.RegisterComponent(clockScreen);
+            builder.RegisterComponent(clockView);
         }
     }
 }

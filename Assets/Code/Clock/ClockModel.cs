@@ -1,18 +1,18 @@
 using System;
 using UniRx;
 
-namespace Time
+namespace Clock
 {
-    public class TimeModel
+    public class ClockModel
     {
-        // ReactiveProperty to represent the current time
+        // ReactiveProperty to represent the current clock
         private readonly ReactiveProperty<DateTime> currentTime = new ReactiveProperty<DateTime>();
 
-        // Expose the current time as an observable property
+        // Expose the current clock as an observable property
         public IReadOnlyReactiveProperty<DateTime> CurrentTime => currentTime;
 
-        // Method to update the current time
-        public void UpdateTime()
+        // Method to update the current clock
+        public void UpdateClock()
         {
             currentTime.Value = DateTime.Now;
         }
