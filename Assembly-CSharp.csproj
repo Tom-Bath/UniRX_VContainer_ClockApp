@@ -62,11 +62,19 @@
     <Analyzer Include="C:\Users\tomba\.vscode\extensions\visualstudiotoolsforunity.vstuc-0.9.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Code\Clock\ClockPresenter.cs" />
-    <Compile Include="Assets\Code\Clock\ClockLifetimeScope.cs" />
     <Compile Include="Assets\Code\BasicClock.cs" />
+    <Compile Include="Assets\Code\Clock\ClockPresenter.cs" />
     <Compile Include="Assets\Code\Clock\ClockService.cs" />
+    <Compile Include="Assets\Code\Clock\ClockLifetimeScope.cs" />
     <Compile Include="Assets\Code\Clock\ClockScreen.cs" />
+    <Compile Include="Assets\Code\Time\TimeView.cs" />
+    <Compile Include="Assets\Code\Time\TimeModel.cs" />
+    <Compile Include="Assets\Code\Time\TimeLifetimeScope.cs" />
+    <Compile Include="Assets\Code\Time\TimeViewModel.cs" />
+    <Compile Include="Assets\Code\Timer\TimerLifetimeScope.cs" />
+    <Compile Include="Assets\Code\Timer\TimerView.cs" />
+    <Compile Include="Assets\Code\Timer\TimerModel.cs" />
+    <Compile Include="Assets\Code\Timer\TimerViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

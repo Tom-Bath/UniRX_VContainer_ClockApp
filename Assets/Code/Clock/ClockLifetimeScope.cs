@@ -20,9 +20,6 @@ namespace Clock
             });
 
             builder.RegisterComponent(clockScreen);
-
-            // Add/Register new stuff as needed, otherwise you will get this error
-            // VContainerException: Failed to resolve Clock.XYZ : No such registration of type: Clock.XYZ
         }
     }
 }
