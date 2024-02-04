@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Display
 {
-    public class DisplayModel : MonoBehaviour
+    public class DisplayModel
     {
         //Using string rather than canvas as value because 
         public ReactiveProperty<string> activeCanvasString = new ReactiveProperty<string>("");

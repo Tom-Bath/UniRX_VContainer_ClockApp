@@ -26,11 +26,6 @@ namespace Timer
         {
             stopwatchText.text = string.Format("{0:00}:{1:00}:{2:00}", ts.Hours, ts.Minutes, ts.Seconds);
         }
-        public void ToggleText(bool isPlaying)
-        {
-            StartPauseButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = isPlaying ? "Pause" : "Start";
-        }
-
         public void ToggleInputUI(bool isPlaying, TimeSpan timeSpan)
         {
             if (timeSpan != TimeSpan.Zero && !isPlaying)

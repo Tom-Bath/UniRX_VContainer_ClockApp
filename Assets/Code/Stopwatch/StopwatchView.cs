@@ -61,10 +61,5 @@ namespace Stopwatch
                 lapList.Remove(lapList[i]);
             }
         }
-
-        public void ToggleText(bool isPlaying)
-        {
-            StartPauseButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = isPlaying ? "Pause" : "Start";
-        }
     }
 }

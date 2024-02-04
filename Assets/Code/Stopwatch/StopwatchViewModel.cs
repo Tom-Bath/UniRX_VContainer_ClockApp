@@ -37,12 +37,6 @@ namespace Stopwatch
                 .Subscribe(_ => stopwatchModel.AddLapTime())
                 .AddTo(stopwatchView);
 
-            stopwatchModel.IsRunning.Subscribe(isActive =>
-            {
-                stopwatchView.ToggleText(isActive);
-                
-            }).AddTo(stopwatchView);
-
             stopwatchModel.ElapsedTime
                 .DistinctUntilChanged()
                 .Where(time => time == 0.0f)

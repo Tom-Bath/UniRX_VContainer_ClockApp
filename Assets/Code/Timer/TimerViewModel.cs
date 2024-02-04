@@ -57,7 +57,6 @@ namespace Timer
 
             timerModel.IsRunning.Subscribe(isActive =>
             {
-                timerView.ToggleText(isActive);
                 timerView.ToggleInputUI(isActive, timerModel.RemainingTime.Value);
                 timerView.PlaySound(isActive, timerModel.RemainingTime.Value);
             }).AddTo(timerView);
