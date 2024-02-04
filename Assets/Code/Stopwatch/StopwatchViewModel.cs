@@ -21,13 +21,20 @@ namespace Stopwatch
 
         void IStartable.Start()
         {
-            UnityEngine.Debug.Log("Starting Stopwatch");
             stopwatchView.StartPauseButton.OnClickAsObservable()
                 .Subscribe(_ => stopwatchModel.ToggleStopwatch())
                 .AddTo(stopwatchView);
 
             stopwatchView.ResetButton.OnClickAsObservable()
-                .Subscribe(_ => stopwatchModel.ResetStopwatch())
+                .Subscribe(_ => 
+                {
+                    stopwatchModel.ResetStopwatch();
+                    stopwatchView.ResetLaps();
+                })
+                .AddTo(stopwatchView);
+
+            stopwatchView.LapButton.OnClickAsObservable()
+                .Subscribe(_ => stopwatchModel.AddLapTime())
                 .AddTo(stopwatchView);
 
             stopwatchModel.IsRunning.Subscribe(isActive =>
@@ -36,12 +43,20 @@ namespace Stopwatch
                 
             }).AddTo(stopwatchView);
 
+            stopwatchModel.ElapsedTime
+                .DistinctUntilChanged()
+                .Where(time => time == 0.0f)
+                .Subscribe(_ =>
+                {
+                    stopwatchView.InstantiateLapPrefabWithTime(stopwatchView.TimeToString(stopwatchModel.PreviousLap.Value));
+                })
+                .AddTo(stopwatchView);
+
             Observable.Interval(TimeSpan.FromMilliseconds(100))
                 .TakeWhile(_ => stopwatchModel.IsRunning.Value == true)
                 .Repeat()  // This allows pausing and not just stopping of the stopwatch
                 .Subscribe(_ => stopwatchModel.ElapsedTime.Value += 100f)
                 .AddTo(stopwatchView);
-            UnityEngine.Debug.Log("Ending Stopwatch");
         }
 
         void ITickable.Tick()
@@ -49,7 +64,7 @@ namespace Stopwatch
             Observable.EveryUpdate()
                 .Subscribe(_ =>
                 {
-                    stopwatchView.UpdateUI(stopwatchModel.ElapsedTime.Value);
+                    stopwatchView.UpdateUIElementText(stopwatchView.CurrentLap, stopwatchModel.ElapsedTime.Value);
                 })
                 .AddTo(disposables);
         }
