@@ -8,7 +8,7 @@ namespace Display
     public class DisplayModel : MonoBehaviour
     {
         //Using string rather than canvas as value because 
-        public ReactiveProperty<string> activeCanvasString = new();
+        public ReactiveProperty<string> activeCanvasString = new ReactiveProperty<string>("");
 
         public void SwapToScreen(string canvas)
         {

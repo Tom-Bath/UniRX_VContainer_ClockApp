@@ -25,6 +25,7 @@ namespace Timer
         {
             // Running Timer Buttons
             timerView.StartPauseButton.OnClickAsObservable()
+                .Where(_ => timerModel.RemainingTime.Value != TimeSpan.Zero)
                 .Subscribe(_ => timerModel.ToggleTimer())
                 .AddTo(timerView);
 

@@ -48,7 +48,6 @@ namespace Timer
 
         public void PlaySound(bool isPlaying, TimeSpan timeSpan)
         {
-            Debug.Log("PlaySound isPlaying = " + isPlaying + ", timespane = " + timeSpan);
             if (!isPlaying && timeSpan == TimeSpan.Zero)
             {
                 audioSource.Play();
