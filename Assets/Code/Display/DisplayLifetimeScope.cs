@@ -11,8 +11,6 @@ namespace Display
 
         protected override void Configure(IContainerBuilder builder)
         {
-            Debug.Log("Building Display");
-
             builder.Register<DisplayModel>(Lifetime.Singleton);  
           
             builder.UseEntryPoints(Lifetime.Singleton, entryPoints =>

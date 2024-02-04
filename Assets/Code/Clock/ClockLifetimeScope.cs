@@ -11,8 +11,6 @@ namespace Clock
 
         protected override void Configure(IContainerBuilder builder)
         {
-            Debug.Log("Building Clock");
-
             builder.Register<ClockModel>(Lifetime.Singleton);  
           
             builder.UseEntryPoints(Lifetime.Singleton, entryPoints =>

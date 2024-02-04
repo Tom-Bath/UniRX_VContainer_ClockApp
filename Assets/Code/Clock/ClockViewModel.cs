@@ -20,8 +20,6 @@ namespace Clock
 
         void IStartable.Start()
         {
-            UnityEngine.Debug.Log("clockView exists = " + (clockView != null));
-            UnityEngine.Debug.Log("clockButton exists = " + (clockView.clockButton != null));
             clockView.clockButton.OnClickAsObservable()
                 .Subscribe(_ => clockModel.PrintHelloWorld())
                 .AddTo(disposables);
