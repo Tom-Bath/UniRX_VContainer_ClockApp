@@ -31,8 +31,12 @@ namespace Timer
             StartPauseButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = isPlaying ? "Pause" : "Start";
         }
 
-        public void ToggleInputUI(bool isPlaying)
+        public void ToggleInputUI(bool isPlaying, TimeSpan timeSpan)
         {
+            if (timeSpan != TimeSpan.Zero && !isPlaying)
+            {
+                return;
+            }
             //We only want to show the timer input buttons when the timer isn't runnign
             PlusOneSecondButton.gameObject.SetActive(!isPlaying);
             PlusTenSecondButton.gameObject.SetActive(!isPlaying);
@@ -40,22 +44,20 @@ namespace Timer
             PlusTenMinuteButton.gameObject.SetActive(!isPlaying);
             PlusOneHourButton.gameObject.SetActive(!isPlaying);
             InputClearButton.gameObject.SetActive(!isPlaying);
+        }
 
-
-            if (isPlaying)
+        public void PlaySound(bool isPlaying, TimeSpan timeSpan)
+        {
+            Debug.Log("PlaySound isPlaying = " + isPlaying + ", timespane = " + timeSpan);
+            if (!isPlaying && timeSpan == TimeSpan.Zero)
+            {
+                audioSource.Play();
+            }
+            else if (isPlaying)
             {
                 //So that the sound doesn't play on starting the app, we'll keep it muted until the clock begins
                 audioSource.volume = 1f;
             }
-            else
-            {
-                PlaySound();
-            }
-        }
-
-        public void PlaySound()
-        {
-            audioSource.Play();
         }
     }
 }

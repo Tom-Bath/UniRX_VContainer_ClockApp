@@ -5,7 +5,7 @@ using VContainer.Unity;
 namespace Clock
 {
     //Responsible for Control Flow
-    public class ClockViewModel : IStartable, ITickable
+    public class ClockViewModel : ITickable
     {
         readonly ClockModel clockModel;
         readonly ClockView clockView;  
@@ -17,14 +17,6 @@ namespace Clock
             this.clockModel = clockModel;
             this.clockView = clockView;
         }
-
-        void IStartable.Start()
-        {
-            clockView.clockButton.OnClickAsObservable()
-                .Subscribe(_ => clockModel.PrintHelloWorld())
-                .AddTo(disposables);
-        }
-
         void ITickable.Tick()
         {
             Observable.EveryUpdate()
