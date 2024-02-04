@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using UniRx;
-using UnityEngine.UI;
 
 namespace Time
 {
@@ -17,7 +14,6 @@ namespace Time
         public void ToggleTimer()
         {
             isRunning.Value = !isRunning.Value;
-            UnityEngine.Debug.Log("isRunning.Value = " + isRunning.Value);
         }
 
         public void ResetTimer()
@@ -35,19 +31,13 @@ namespace Time
         {
             if (remainingTime.Value <= TimeSpan.Zero)
             {
-                // Set your bool to false
                 isRunning.Value = false;
             }
         }
 
         public void IncrememntTimer(int secondsToAdd)
         {
-            UnityEngine.Debug.Log("Adding seconds" + secondsToAdd + ", remainintTime = " + remainingTime.Value);
- 
-            // 1 minute = 60 seconds, 10 minutes 600 seconds, 1 hour 3600 seconds
             remainingTime.Value = remainingTime.Value + TimeSpan.FromSeconds(secondsToAdd);
-
-            UnityEngine.Debug.Log("Now remainintTime = " + remainingTime.Value);
         }
     }
 }

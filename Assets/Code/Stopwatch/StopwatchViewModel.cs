@@ -1,5 +1,4 @@
 using System;
-using System.Diagnostics;
 using UniRx;
 using VContainer.Unity;
 
@@ -23,7 +22,7 @@ namespace Stopwatch
         {
             stopwatchView.StartPauseButton.OnClickAsObservable()
                 .Subscribe(_ => stopwatchModel.ToggleStopwatch())
-                .AddTo(stopwatchView);
+                .AddTo(disposables);
 
             stopwatchView.ResetButton.OnClickAsObservable()
                 .Subscribe(_ => 
@@ -31,11 +30,11 @@ namespace Stopwatch
                     stopwatchModel.ResetStopwatch();
                     stopwatchView.ResetLaps();
                 })
-                .AddTo(stopwatchView);
+                .AddTo(disposables);
 
             stopwatchView.LapButton.OnClickAsObservable()
                 .Subscribe(_ => stopwatchModel.AddLapTime())
-                .AddTo(stopwatchView);
+                .AddTo(disposables);
 
             stopwatchModel.ElapsedTime
                 .DistinctUntilChanged()
@@ -44,13 +43,13 @@ namespace Stopwatch
                 {
                     stopwatchView.InstantiateLapPrefabWithTime(stopwatchView.TimeToString(stopwatchModel.PreviousLap.Value));
                 })
-                .AddTo(stopwatchView);
+                .AddTo(disposables);
 
             Observable.Interval(TimeSpan.FromMilliseconds(100))
                 .TakeWhile(_ => stopwatchModel.IsRunning.Value == true)
                 .Repeat()  // This allows pausing and not just stopping of the stopwatch
                 .Subscribe(_ => stopwatchModel.ElapsedTime.Value += 100f)
-                .AddTo(stopwatchView);
+                .AddTo(disposables);
         }
 
         void ITickable.Tick()

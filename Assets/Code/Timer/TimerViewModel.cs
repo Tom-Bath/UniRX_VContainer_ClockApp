@@ -1,7 +1,5 @@
 using System;
-using System.Diagnostics;
 using Time;
-using TMPro;
 using UniRx;
 using VContainer.Unity;
 
@@ -27,39 +25,39 @@ namespace Timer
             timerView.StartPauseButton.OnClickAsObservable()
                 .Where(_ => timerModel.RemainingTime.Value != TimeSpan.Zero)
                 .Subscribe(_ => timerModel.ToggleTimer())
-                .AddTo(timerView);
+                .AddTo(disposables);
 
             timerView.ResetButton.OnClickAsObservable()
                 .Subscribe(_ => timerModel.ResetTimer())
-                .AddTo(timerView);
+                .AddTo(disposables);
             
             // Setup Timer Buttons
             timerView.InputClearButton.OnClickAsObservable()
                 .Subscribe(_ => timerModel.ClearTimer())
-                .AddTo(timerView);
+                .AddTo(disposables);
             
             // Time Increment Buttons
             timerView.PlusOneSecondButton.OnClickAsObservable()
                 .Subscribe(_ => timerModel.IncrememntTimer(1))
-                .AddTo(timerView);
+                .AddTo(disposables);
             timerView.PlusTenSecondButton.OnClickAsObservable()
                 .Subscribe(_ => timerModel.IncrememntTimer(10))
-                .AddTo(timerView);
+                .AddTo(disposables);
             timerView.PlusOneMinuteButton.OnClickAsObservable()
                 .Subscribe(_ => timerModel.IncrememntTimer(60))
-                .AddTo(timerView);
+                .AddTo(disposables);
             timerView.PlusTenMinuteButton.OnClickAsObservable()
                 .Subscribe(_ => timerModel.IncrememntTimer(600))
-                .AddTo(timerView);
+                .AddTo(disposables);
             timerView.PlusOneHourButton.OnClickAsObservable()
                 .Subscribe(_ => timerModel.IncrememntTimer(3600))
-                .AddTo(timerView);
+                .AddTo(disposables);
 
             timerModel.IsRunning.Subscribe(isActive =>
             {
                 timerView.ToggleInputUI(isActive, timerModel.RemainingTime.Value);
                 timerView.PlaySound(isActive, timerModel.RemainingTime.Value);
-            }).AddTo(timerView);
+            }).AddTo(disposables);
 
             timerModel.RemainingTime.Subscribe(time =>
             {
@@ -67,13 +65,11 @@ namespace Timer
 
             }).AddTo(disposables);
 
-            
-
             Observable.Interval(TimeSpan.FromMilliseconds(100))
                 .TakeWhile(_ => timerModel.IsRunning.Value == true)
                 .Repeat()  // This allows pausing and not just stopping of the timer
                 .Subscribe(_ => timerModel.RemainingTime.Value -= TimeSpan.FromMilliseconds(100))
-                .AddTo(timerView);
+                .AddTo(disposables);
         }
 
         void ITickable.Tick()
