@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 14555
+  controlID: 65
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,15 +64,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1172.8
+    x: 1172
     y: 0
-    width: 363.19995
+    width: 364
     height: 722.8
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &4
@@ -92,13 +92,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 290.4
-    height: 427.2
+    width: 295.2
+    height: 415.2
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -117,15 +117,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 427.2
-    width: 1172.8
-    height: 295.59998
+    y: 415.2
+    width: 1172
+    height: 307.59998
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 19}
+  - {fileID: 17}
+  - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &6
@@ -177,7 +177,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Default
+  m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,12 +218,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1172.8
+    width: 1172
     height: 722.8
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 14556
+  controlID: 66
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,12 +243,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1172.8
-    height: 427.2
+    width: 1172
+    height: 415.2
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 14557
+  controlID: 67
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,21 +264,794 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 290.4
+    x: 295.2
     y: 0
-    width: 882.4
-    height: 427.2
+    width: 876.8
+    height: 415.2
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 17}
-  - {fileID: 18}
+  - {fileID: 20}
+  - {fileID: 21}
+  - {fileID: 16}
+  - {fileID: 15}
+  - {fileID: 14}
   - {fileID: 13}
-  - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 4
 --- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 488.80002
+    width: 1171
+    height: 286.59998
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 295.2
+    y: 73.6
+    width: 874.8
+    height: 394.2
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_Spl:
+    ID: 117
+    splitterInitialOffset: 304.8
+    currentActiveSplitter: -1
+    realSizes:
+    - 236
+    - 88
+    relativeSizes:
+    - 0.72839504
+    - 0.27160496
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 324
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 1
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 13}
+    m_NewResultList:
+    - id: 1004
+      uniqueId: '[Telexistence Clock App][suite]'
+      name: Telexistence Clock App
+      fullName: Telexistence Clock App
+      resultStatus: 1
+      duration: 0.3846013
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1012
+      uniqueId: '[PlayModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+      name: PlayModeTests.dll
+      fullName: C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/PlayModeTests.dll
+      resultStatus: 1
+      duration: 0.3605902
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: '[Telexistence Clock App][suite]'
+    - id: 1001
+      uniqueId: PlayModeTests.dll/[PlayModeTests][ClockPlaymodeTests][suite]
+      name: ClockPlaymodeTests
+      fullName: ClockPlaymodeTests
+      resultStatus: 1
+      duration: 0.1724721
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[PlayModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1002
+      uniqueId: PlayModeTests.dll/ClockPlaymodeTests/[PlayModeTests][ClockPlaymodeTests.ClockModel_UpdateClock_ShouldUpdateCurrentTime]
+      name: ClockModel_UpdateClock_ShouldUpdateCurrentTime
+      fullName: ClockPlaymodeTests.ClockModel_UpdateClock_ShouldUpdateCurrentTime
+      resultStatus: 1
+      duration: 0.0466533
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ClockPlaymodeTests][suite]
+    - id: 1003
+      uniqueId: PlayModeTests.dll/ClockPlaymodeTests/[PlayModeTests][ClockPlaymodeTests.ClockViewModel_UpdateTimeInView_ShouldUpdateClockView]
+      name: ClockViewModel_UpdateTimeInView_ShouldUpdateClockView
+      fullName: ClockPlaymodeTests.ClockViewModel_UpdateTimeInView_ShouldUpdateClockView
+      resultStatus: 1
+      duration: 0.0949502
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][ClockPlaymodeTests][suite]
+    - id: 1004
+      uniqueId: PlayModeTests.dll/[PlayModeTests][DisplayPlaymodeTests][suite]
+      name: DisplayPlaymodeTests
+      fullName: DisplayPlaymodeTests
+      resultStatus: 1
+      duration: 0.0420544
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1010
+      parentUniqueId: '[PlayModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1005
+      uniqueId: PlayModeTests.dll/DisplayPlaymodeTests/[PlayModeTests][DisplayPlaymodeTests.DisplayView_DisableAllCanvas_DisablesAllCanvases]
+      name: DisplayView_DisableAllCanvas_DisablesAllCanvases
+      fullName: DisplayPlaymodeTests.DisplayView_DisableAllCanvas_DisablesAllCanvases
+      resultStatus: 1
+      duration: 0.0175652
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][DisplayPlaymodeTests][suite]
+    - id: 1006
+      uniqueId: PlayModeTests.dll/DisplayPlaymodeTests/[PlayModeTests][DisplayPlaymodeTests.DisplayView_SetActiveCanvas_EnablesSpecifiedCanvas]
+      name: DisplayView_SetActiveCanvas_EnablesSpecifiedCanvas
+      fullName: DisplayPlaymodeTests.DisplayView_SetActiveCanvas_EnablesSpecifiedCanvas
+      resultStatus: 1
+      duration: 0.0196035
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][DisplayPlaymodeTests][suite]
+    - id: 1006
+      uniqueId: PlayModeTests.dll/[PlayModeTests][StopwatchPlaymodeTests][suite]
+      name: StopwatchPlaymodeTests
+      fullName: StopwatchPlaymodeTests
+      resultStatus: 1
+      duration: 0.0311276
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1010
+      parentUniqueId: '[PlayModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1010
+      uniqueId: PlayModeTests.dll/StopwatchPlaymodeTests/[PlayModeTests][StopwatchPlaymodeTests.StopwatchView_InstantiateLapPrefabWithTime_LapInstantiated]
+      name: StopwatchView_InstantiateLapPrefabWithTime_LapInstantiated
+      fullName: StopwatchPlaymodeTests.StopwatchView_InstantiateLapPrefabWithTime_LapInstantiated
+      resultStatus: 1
+      duration: 0.0098492
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][StopwatchPlaymodeTests][suite]
+    - id: 1011
+      uniqueId: PlayModeTests.dll/StopwatchPlaymodeTests/[PlayModeTests][StopwatchPlaymodeTests.StopwatchView_ResetLaps_ShouldSetLapListTo0Elements]
+      name: StopwatchView_ResetLaps_ShouldSetLapListTo0Elements
+      fullName: StopwatchPlaymodeTests.StopwatchView_ResetLaps_ShouldSetLapListTo0Elements
+      resultStatus: 1
+      duration: 0.0032806
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][StopwatchPlaymodeTests][suite]
+    - id: 1008
+      uniqueId: PlayModeTests.dll/StopwatchPlaymodeTests/[PlayModeTests][StopwatchPlaymodeTests.StopwatchView_TimeToString_FormattingCorrect]
+      name: StopwatchView_TimeToString_FormattingCorrect
+      fullName: StopwatchPlaymodeTests.StopwatchView_TimeToString_FormattingCorrect
+      resultStatus: 1
+      duration: 0.0013275
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][StopwatchPlaymodeTests][suite]
+    - id: 1009
+      uniqueId: PlayModeTests.dll/StopwatchPlaymodeTests/[PlayModeTests][StopwatchPlaymodeTests.StopwatchView_UpdateUIElementText_TextUpdated]
+      name: StopwatchView_UpdateUIElementText_TextUpdated
+      fullName: StopwatchPlaymodeTests.StopwatchView_UpdateUIElementText_TextUpdated
+      resultStatus: 1
+      duration: 0.0006189
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][StopwatchPlaymodeTests][suite]
+    - id: 1004
+      uniqueId: PlayModeTests.dll/[PlayModeTests][TimerPlaymodeTests][suite]
+      name: TimerPlaymodeTests
+      fullName: TimerPlaymodeTests
+      resultStatus: 1
+      duration: 0.1050518
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1006
+      parentUniqueId: '[PlayModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/PlayModeTests.dll][suite]'
+    - id: 1072
+      uniqueId: PlayModeTests.dll/TimerPlaymodeTests/[PlayModeTests][TimerPlaymodeTests.TimerView_PlaySound_ShouldPlayOrMuteAudioBasedOnIsPlayingAndTimeSpan]
+      name: TimerView_PlaySound_ShouldPlayOrMuteAudioBasedOnIsPlayingAndTimeSpan
+      fullName: TimerPlaymodeTests.TimerView_PlaySound_ShouldPlayOrMuteAudioBasedOnIsPlayingAndTimeSpan
+      resultStatus: 1
+      duration: 0.06081
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][TimerPlaymodeTests][suite]
+    - id: 1073
+      uniqueId: PlayModeTests.dll/TimerPlaymodeTests/[PlayModeTests][TimerPlaymodeTests.TimerView_ToggleInputUI_ShouldShowOrHideInputButtonsBasedOnIsPlayingAndTimeSpan]
+      name: TimerView_ToggleInputUI_ShouldShowOrHideInputButtonsBasedOnIsPlayingAndTimeSpan
+      fullName: TimerPlaymodeTests.TimerView_ToggleInputUI_ShouldShowOrHideInputButtonsBasedOnIsPlayingAndTimeSpan
+      resultStatus: 1
+      duration: 0.0277316
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: PlayModeTests.dll/[PlayModeTests][TimerPlaymodeTests][suite]
+    m_ResultText: ClockModel_UpdateClock_ShouldUpdateCurrentTime (0.047s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 24}
+      m_SelectedIDs: 8c93c798
+      m_LastClickedID: -1731751028
+      m_ExpandedIDs: 8c9f80a1b16eefa685a9aebd9a6b3ece5cbadff86b8d110d7eb38a382ce7ca68e57a9a78ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 13}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[Telexistence Clock App][suite]'
+      name: Telexistence Clock App
+      fullName: Telexistence Clock App
+      resultStatus: 1
+      duration: 0.1467504
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1004
+      uniqueId: '[EditModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/EditModeTests.dll][suite]'
+      name: EditModeTests.dll
+      fullName: C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/EditModeTests.dll
+      resultStatus: 1
+      duration: 0.1189488
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Telexistence Clock App][suite]'
+    - id: 1007
+      uniqueId: EditModeTests.dll/[EditModeTests][ClockEditmodeTests][suite]
+      name: ClockEditmodeTests
+      fullName: ClockEditmodeTests
+      resultStatus: 1
+      duration: 0.057331
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: '[EditModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/EditModeTests.dll][suite]'
+    - id: 1008
+      uniqueId: EditModeTests.dll/ClockEditmodeTests/[EditModeTests][ClockEditmodeTests.ClockModel_UpdateClock_ShouldUpdateCurrentTime]
+      name: ClockModel_UpdateClock_ShouldUpdateCurrentTime
+      fullName: ClockEditmodeTests.ClockModel_UpdateClock_ShouldUpdateCurrentTime
+      resultStatus: 1
+      duration: 0.0250467
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: EditModeTests.dll/[EditModeTests][ClockEditmodeTests][suite]
+    - id: 1003
+      uniqueId: EditModeTests.dll/ClockEditmodeTests/[EditModeTests][ClockEditmodeTests.ClockView_UpdateClockUI_ShouldUpdateClockTextWithFormattedTime]
+      name: ClockView_UpdateClockUI_ShouldUpdateClockTextWithFormattedTime
+      fullName: ClockEditmodeTests.ClockView_UpdateClockUI_ShouldUpdateClockTextWithFormattedTime
+      resultStatus: 1
+      duration: 0.0081841
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeTests.dll/[EditModeTests][ClockEditmodeTests][suite]
+    - id: 1004
+      uniqueId: EditModeTests.dll/ClockEditmodeTests/[EditModeTests][ClockEditmodeTests.ClockView_UpdateTimezoneUI_ShouldUpdateClockTextWithFormattedTimezone]
+      name: ClockView_UpdateTimezoneUI_ShouldUpdateClockTextWithFormattedTimezone
+      fullName: ClockEditmodeTests.ClockView_UpdateTimezoneUI_ShouldUpdateClockTextWithFormattedTimezone
+      resultStatus: 1
+      duration: 0.0012308
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditModeTests.dll/[EditModeTests][ClockEditmodeTests][suite]
+    - id: 1015
+      uniqueId: EditModeTests.dll/[EditModeTests][DisplayEditmodeTests][suite]
+      name: DisplayEditmodeTests
+      fullName: DisplayEditmodeTests
+      resultStatus: 1
+      duration: 0.0440963
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1022
+      parentUniqueId: '[EditModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/EditModeTests.dll][suite]'
+    - id: 1004
+      uniqueId: EditModeTests.dll/DisplayEditmodeTests/[EditModeTests][DisplayEditmodeTests.DisplayModel_MethodSwapToScreen_ShouldAssignNewStringValue]
+      name: DisplayModel_MethodSwapToScreen_ShouldAssignNewStringValue
+      fullName: DisplayEditmodeTests.DisplayModel_MethodSwapToScreen_ShouldAssignNewStringValue
+      resultStatus: 1
+      duration: 0.0113883
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: EditModeTests.dll/[EditModeTests][DisplayEditmodeTests][suite]
+    - id: 1017
+      uniqueId: EditModeTests.dll/[EditModeTests][StopwatchEditmodeTests][suite]
+      name: StopwatchEditmodeTests
+      fullName: StopwatchEditmodeTests
+      resultStatus: 1
+      duration: 0.0080481
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1022
+      parentUniqueId: '[EditModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/EditModeTests.dll][suite]'
+    - id: 1008
+      uniqueId: EditModeTests.dll/StopwatchEditmodeTests/[EditModeTests][StopwatchEditmodeTests.StopwatchModel_MethodAddLapTime_ShouldAssignElapsedTimeToLapTime]
+      name: StopwatchModel_MethodAddLapTime_ShouldAssignElapsedTimeToLapTime
+      fullName: StopwatchEditmodeTests.StopwatchModel_MethodAddLapTime_ShouldAssignElapsedTimeToLapTime
+      resultStatus: 1
+      duration: 0.0021266
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditModeTests.dll/[EditModeTests][StopwatchEditmodeTests][suite]
+    - id: 1019
+      uniqueId: EditModeTests.dll/StopwatchEditmodeTests/[EditModeTests][StopwatchEditmodeTests.StopwatchModel_MethodResetStopwatch_ShouldSetValuesToDefault]
+      name: StopwatchModel_MethodResetStopwatch_ShouldSetValuesToDefault
+      fullName: StopwatchEditmodeTests.StopwatchModel_MethodResetStopwatch_ShouldSetValuesToDefault
+      resultStatus: 1
+      duration: 0.000612
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditModeTests.dll/[EditModeTests][StopwatchEditmodeTests][suite]
+    - id: 1018
+      uniqueId: EditModeTests.dll/StopwatchEditmodeTests/[EditModeTests][StopwatchEditmodeTests.StopwatchModel_MethodToggleStopwatch_ShouldToggleIsRunningValue]
+      name: StopwatchModel_MethodToggleStopwatch_ShouldToggleIsRunningValue
+      fullName: StopwatchEditmodeTests.StopwatchModel_MethodToggleStopwatch_ShouldToggleIsRunningValue
+      resultStatus: 1
+      duration: 0.0001842
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: EditModeTests.dll/[EditModeTests][StopwatchEditmodeTests][suite]
+    - id: 1020
+      uniqueId: EditModeTests.dll/[EditModeTests][TimerEditmodeTests][suite]
+      name: TimerEditmodeTests
+      fullName: TimerEditmodeTests
+      resultStatus: 1
+      duration: 0.007665
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1022
+      parentUniqueId: '[EditModeTests][C:/Users/tomba/Telexistence Clock App/Library/ScriptAssemblies/EditModeTests.dll][suite]'
+    - id: 1013
+      uniqueId: EditModeTests.dll/TimerEditmodeTests/[EditModeTests][TimerEditmodeTests.TimerModel_CheckTimerIsZero_ShouldStopTimerIfRemainingTimeIsZero]
+      name: TimerModel_CheckTimerIsZero_ShouldStopTimerIfRemainingTimeIsZero
+      fullName: TimerEditmodeTests.TimerModel_CheckTimerIsZero_ShouldStopTimerIfRemainingTimeIsZero
+      resultStatus: 1
+      duration: 0.0013747
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: EditModeTests.dll/[EditModeTests][TimerEditmodeTests][suite]
+    - id: 1012
+      uniqueId: EditModeTests.dll/TimerEditmodeTests/[EditModeTests][TimerEditmodeTests.TimerModel_ClearTimer_ShouldSetRemainingTimeToZero]
+      name: TimerModel_ClearTimer_ShouldSetRemainingTimeToZero
+      fullName: TimerEditmodeTests.TimerModel_ClearTimer_ShouldSetRemainingTimeToZero
+      resultStatus: 1
+      duration: 0.0004106
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: EditModeTests.dll/[EditModeTests][TimerEditmodeTests][suite]
+    - id: 1014
+      uniqueId: EditModeTests.dll/TimerEditmodeTests/[EditModeTests][TimerEditmodeTests.TimerModel_IncrememntTimer_ShouldAddSecondsToRemainingTime]
+      name: TimerModel_IncrememntTimer_ShouldAddSecondsToRemainingTime
+      fullName: TimerEditmodeTests.TimerModel_IncrememntTimer_ShouldAddSecondsToRemainingTime
+      resultStatus: 1
+      duration: 0.0001571
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: EditModeTests.dll/[EditModeTests][TimerEditmodeTests][suite]
+    - id: 1011
+      uniqueId: EditModeTests.dll/TimerEditmodeTests/[EditModeTests][TimerEditmodeTests.TimerModel_ResetTimer_ShouldStopTimerAndClearRemainingTime]
+      name: TimerModel_ResetTimer_ShouldStopTimerAndClearRemainingTime
+      fullName: TimerEditmodeTests.TimerModel_ResetTimer_ShouldStopTimerAndClearRemainingTime
+      resultStatus: 1
+      duration: 0.0002982
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: EditModeTests.dll/[EditModeTests][TimerEditmodeTests][suite]
+    - id: 1010
+      uniqueId: EditModeTests.dll/TimerEditmodeTests/[EditModeTests][TimerEditmodeTests.TimerModel_ToggleTimer_ShouldInvertIsRunning]
+      name: TimerModel_ToggleTimer_ShouldInvertIsRunning
+      fullName: TimerEditmodeTests.TimerModel_ToggleTimer_ShouldInvertIsRunning
+      resultStatus: 1
+      duration: 0.0008378
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: EditModeTests.dll/[EditModeTests][TimerEditmodeTests][suite]
+    - id: 1016
+      uniqueId: EditModeTests.dll/TimerEditmodeTests/[EditModeTests][TimerEditmodeTests.TimerView_UpdateUIRemainingTime_ShouldUpdateStopwatchTextWithFormattedTime]
+      name: TimerView_UpdateUIRemainingTime_ShouldUpdateStopwatchTextWithFormattedTime
+      fullName: TimerEditmodeTests.TimerView_UpdateUIRemainingTime_ShouldUpdateStopwatchTextWithFormattedTime
+      resultStatus: 1
+      duration: 0.0008865
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: EditModeTests.dll/[EditModeTests][TimerEditmodeTests][suite]
+    m_ResultText: ClockView_UpdateTimezoneUI_ShouldUpdateClockTextWithFormattedTimezone
+      (0.001s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 950171be
+      m_LastClickedID: -1099890283
+      m_ExpandedIDs: 52be1981cc09ab841d387dc49a6b3eceafd08a126c6d3f3738fec675ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687acdc95675db149bf5de5771ecac18, type: 3}
+  m_Name: SpriteEditorWindow
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 360, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Sprite Editor
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 295.2
+    y: 73.6
+    width: 874.8
+    height: 394.2
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ShowAlpha: 0
+  m_MipLevel: 0
+  m_Zoom: 16.632
+  m_ScrollPosition: {x: 127.27101, y: 0}
+  m_SelectedObject: {fileID: 0}
+  m_SelectedSpriteRectGUID: 00000000000000000000000000000000
+  m_LastUsedModuleTypeName: 
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -333,7 +1106,7 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
---- !u!114 &13
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,7 +1161,7 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
---- !u!114 &14
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -409,9 +1182,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 500.80002
-    width: 1171.8
-    height: 274.59998
+    y: 488.80002
+    width: 1171
+    height: 286.59998
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -429,22 +1202,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages/com.unity.textmeshpro
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Packages/com.unity.textmeshpro
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\tomba\Telexistence Clock App
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e4620000
-    m_LastClickedID: 25316
-    m_ExpandedIDs: 000000008e62000000ca9a3bffffff7f
+    m_SelectedIDs: d6640000
+    m_LastClickedID: 25814
+    m_ExpandedIDs: 00000000d664000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -460,7 +1233,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -472,7 +1245,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008e62000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000d6640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,7 +1289,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -528,7 +1301,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &15
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -548,9 +1321,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1172.8
+    x: 1172
     y: 73.6
-    width: 362.19995
+    width: 363
     height: 701.8
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -569,7 +1342,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &16
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -591,8 +1364,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 289.4
-    height: 406.2
+    width: 294.2
+    height: 394.2
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -600,9 +1373,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 94ccffff
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 42fbffff
+      m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -618,7 +1391,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -626,7 +1399,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &17
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -646,10 +1419,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 290.4
+    x: 295.2
     y: 73.6
-    width: 880.4
-    height: 406.2
+    width: 874.8
+    height: 394.2
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -873,9 +1646,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.6393874, y: 0.14872642, z: 0.09376023}
+    m_Target: {x: 2.4491282, y: 0.20752329, z: 259.2959}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 2.4491282, y: 0.20752329, z: 259.2959}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -906,7 +1679,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -926,9 +1699,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.548644
+    m_Target: 5.5280952
     speed: 2
-    m_Value: 10
+    m_Value: 5.5280952
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -953,7 +1726,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -973,10 +1746,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 507
-    y: 94
-    width: 1532
-    height: 790
+    x: 295.2
+    y: 73.6
+    width: 874.8
+    height: 394.2
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -987,25 +1760,25 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1532, y: 769}
+  m_TargetSize: {x: 210, y: 373.2}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
+  m_RenderIMGUI: 1
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 07000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -612.8
-    m_HBaseRangeMax: 612.8
-    m_VBaseRangeMin: -307.6
-    m_VBaseRangeMax: 307.6
+    m_HBaseRangeMin: -84
+    m_HBaseRangeMax: 84
+    m_VBaseRangeMin: -149.28001
+    m_VBaseRangeMax: 149.28001
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1014,7 +1787,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1023,53 +1796,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1532
-      height: 769
+      width: 874.8
+      height: 373.2
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 766, y: 384.5}
+    m_Translation: {x: 437.4, y: 186.6}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -766
-      y: -384.5
-      width: 1532
-      height: 769
+      x: -437.4
+      y: -186.6
+      width: 874.8
+      height: 373.2
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1915, y: 987.5}
+  m_LastWindowPixelSize: {x: 1093.5, y: 492.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 2249
-    y: 726.5
-    width: 920
-    height: 250
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
