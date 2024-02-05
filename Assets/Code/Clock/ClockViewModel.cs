@@ -1,3 +1,4 @@
+using System;
 using UniRx;
 using VContainer.Unity;
 
@@ -29,7 +30,7 @@ namespace Clock
         void ITickable.Tick()
         {
             Observable.EveryUpdate()
-                .Subscribe(_ => clockModel.UpdateClock())
+                .Subscribe(_ => clockModel.UpdateClock(DateTime.Now))
                 .AddTo(disposables);
 
             Observable.EveryUpdate()

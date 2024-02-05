@@ -8,9 +8,9 @@ namespace Clock
         private readonly ReactiveProperty<DateTime> currentTime = new ReactiveProperty<DateTime>();
         public IReadOnlyReactiveProperty<DateTime> CurrentTime => currentTime;
 
-        public void UpdateClock()
+        public void UpdateClock(DateTime dateTime)
         {
-            currentTime.Value = DateTime.Now;
+            currentTime.Value = dateTime;
         }
     }
 }

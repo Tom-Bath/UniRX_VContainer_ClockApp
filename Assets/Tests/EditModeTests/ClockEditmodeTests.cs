@@ -15,7 +15,7 @@ public class ClockEditmodeTests
         DateTime now = DateTime.Now;
 
         // Act
-        clockModel.UpdateClock();
+        clockModel.UpdateClock(DateTime.Now);
 
         //Assert
         Assert.AreEqual(clockModel.CurrentTime.Value, now);

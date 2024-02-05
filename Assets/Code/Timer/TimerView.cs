@@ -1,5 +1,6 @@
 using System;
 using TMPro;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,14 +26,8 @@ namespace Timer
         {
             stopwatchText.text = string.Format("{0:00}:{1:00}:{2:00}", ts.Hours, ts.Minutes, ts.Seconds);
         }
-        public void ToggleInputUI(bool isPlaying, TimeSpan timeSpan)
+        public void ToggleInputUI(bool isPlaying)
         {
-            if (timeSpan != TimeSpan.Zero && !isPlaying)
-            {
-                return;
-            }
-
-            //We only want to show the timer input buttons when the timer isn't runnign
             PlusOneSecondButton.gameObject.SetActive(!isPlaying);
             PlusTenSecondButton.gameObject.SetActive(!isPlaying);
             PlusOneMinuteButton.gameObject.SetActive(!isPlaying);

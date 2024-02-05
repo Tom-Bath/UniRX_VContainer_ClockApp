@@ -17,7 +17,7 @@ public class ClockPlaymodeTests
         DateTime now = DateTime.Now;
 
         // Act
-        clockModel.UpdateClock();
+        clockModel.UpdateClock(now);
 
         // Assert
         yield return null; // Wait for end of frame to allow UniRx to update
@@ -40,7 +40,7 @@ public class ClockPlaymodeTests
         ClockViewModel clockViewModel = new ClockViewModel(clockModel, clockView);
 
         // Act
-        clockModel.UpdateClock();
+        clockModel.UpdateClock(DateTime.Now);
         clockViewModel.UpdateTimeInView();
 
         // Assert

@@ -53,7 +53,7 @@ public class TimerPlaymodeTests
         timerView.InputClearButton = new GameObject().AddComponent<Button>();
         
         // Act
-        timerView.ToggleInputUI(false, TimeSpan.Zero); //The UI is on when isPlaying = false
+        timerView.ToggleInputUI(false); //The UI is on when isPlaying = false
         yield return null;
 
         // Assert
@@ -65,7 +65,7 @@ public class TimerPlaymodeTests
         Assert.IsTrue(timerView.InputClearButton.gameObject.activeSelf);
 
         // Act
-        timerView.ToggleInputUI(true, TimeSpan.FromSeconds(5));
+        timerView.ToggleInputUI(true);
         yield return null;
 
         // Assert
