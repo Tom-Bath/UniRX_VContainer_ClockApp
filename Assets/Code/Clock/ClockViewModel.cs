@@ -4,10 +4,10 @@ using VContainer.Unity;
 namespace Clock
 {
     //Responsible for Control Flow
-    public class ClockViewModel : ITickable
+    public class ClockViewModel : ITickable, IStartable
     {
         readonly ClockModel clockModel;
-        readonly ClockView clockView;  
+        readonly ClockView clockView;
 
         private CompositeDisposable disposables = new();
 
@@ -15,6 +15,16 @@ namespace Clock
         {
             this.clockModel = clockModel;
             this.clockView = clockView;
+        }
+
+        void IStartable.Start()
+        {
+            Observable.Start(() =>
+            {
+                clockView.UpdateTimezoneUI(System.TimeZoneInfo.Local);
+            })
+            .Subscribe()
+            .AddTo(disposables);
         }
         void ITickable.Tick()
         {
@@ -29,7 +39,7 @@ namespace Clock
 
         public void UpdateTimeInView()
         {
-            clockView.UpdateUI(clockModel.CurrentTime.Value);
+            clockView.UpdateClockUI(clockModel.CurrentTime.Value);
         }
     }
 }

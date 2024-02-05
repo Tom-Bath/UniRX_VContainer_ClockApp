@@ -1,0 +1,33 @@
+# Time App in Unity README
+
+## Description
+
+Welcome to the Time App in Unity! This application allows users to track time with precision, providing a customizable time format and timezone. Whether you're managing tasks or simply keeping track of your day, this app is designed to be a helpful timekeeping tool.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
+
+## Installation
+
+To get started with the Time App in Unity, follow these steps:
+
+## Usage
+
+xx
+
+## Questions
+
+    1. As we said, this application will be used on iOS/iPad devices. Do you have any concern for UI?
+
+x
+
+    2. How would you refactor the code and/or project after release? What would you prioritize as “must happen” versus “nice to have” changes
+
+x
+
+    3. [Optional] This application will be used on VR application. Share your concern and your opinion on what need to take into account to support it in VR?
+
+x

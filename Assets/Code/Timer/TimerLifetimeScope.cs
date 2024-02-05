@@ -12,8 +12,6 @@ namespace Timer
 
         protected override void Configure(IContainerBuilder builder)
         {
-            Debug.Log("Building Stopwatch");
-
             builder.Register<TimerModel>(Lifetime.Singleton);  
           
             builder.UseEntryPoints(Lifetime.Singleton, entryPoints =>

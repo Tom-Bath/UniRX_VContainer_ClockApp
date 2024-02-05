@@ -20,7 +20,7 @@ public class StopwatchPlaymodeTests
         string formattedTime = stopwatchView.TimeToString(elapsedTime);
 
         // Assert
-        Assert.AreEqual("2057:36.79", formattedTime);
+        Assert.AreEqual("0:01.23", formattedTime);
     }
 
     [Test]
