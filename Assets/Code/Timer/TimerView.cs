@@ -31,6 +31,7 @@ namespace Timer
             {
                 return;
             }
+
             //We only want to show the timer input buttons when the timer isn't runnign
             PlusOneSecondButton.gameObject.SetActive(!isPlaying);
             PlusTenSecondButton.gameObject.SetActive(!isPlaying);

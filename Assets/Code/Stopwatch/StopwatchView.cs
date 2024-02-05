@@ -17,6 +17,7 @@ namespace Stopwatch
         public GameObject LapUIPrefab;
 
         private List<GameObject> lapList; // Used to store the laps to be removed later
+        public List<GameObject> LapList => lapList;
 
         public string TimeToString(float elapsedTime)
         {

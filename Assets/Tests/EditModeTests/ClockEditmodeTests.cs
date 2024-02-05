@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
+using System;
 
 using Clock;
-using System;
+using TMPro;
 
 public class ClockEditmodeTests
 {
@@ -21,5 +18,23 @@ public class ClockEditmodeTests
 
         //Assert
         Assert.AreEqual(clockModel.CurrentTime.Value, now);
+    }
+
+    [Test]
+    public void ClockView_UpdateUI_ShouldUpdateClockTextWithFormattedTime()
+    {
+        // Arrange
+        var clockViewGameObject = new UnityEngine.GameObject();
+        ClockView clockView = clockViewGameObject.AddComponent<ClockView>();
+        var textMeshProUGUI = clockViewGameObject.AddComponent<TextMeshProUGUI>();
+        clockView.clockText = textMeshProUGUI;
+
+        var currentTime = new DateTime(2024, 2, 5, 12, 30, 45);
+
+        // Act
+        clockView.UpdateUI(currentTime);
+
+        // Assert
+        Assert.AreEqual("12:30:45", clockView.clockText.text);
     }
 }

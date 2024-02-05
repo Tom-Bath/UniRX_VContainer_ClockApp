@@ -4,14 +4,19 @@ namespace Stopwatch
 {
     public class StopwatchModel
     {
-        private ReactiveProperty<bool> isRunning = new ReactiveProperty<bool>(false);
-        private ReactiveProperty<float> elapsedTime = new ReactiveProperty<float>(1f); //TODO cant be 0
-        private ReactiveProperty<float> previousLap = new ReactiveProperty<float>(0f); 
+        private ReactiveProperty<bool> isRunning;
+        private ReactiveProperty<float> elapsedTime;
+        private ReactiveProperty<float> previousLap;
 
         public IReadOnlyReactiveProperty<bool> IsRunning => isRunning;
         public IReactiveProperty<float> ElapsedTime => elapsedTime;
         public IReadOnlyReactiveProperty<float> PreviousLap => previousLap;
-
+        public StopwatchModel()
+        {
+            isRunning = new ReactiveProperty<bool>(false);
+            elapsedTime = new ReactiveProperty<float>(1f); //TODO cant be 0
+            previousLap = new ReactiveProperty<float>(0f);
+        }
         public void ToggleStopwatch()
         {
             isRunning.Value = !isRunning.Value;
@@ -27,6 +32,6 @@ namespace Stopwatch
         {
             previousLap.Value = elapsedTime.Value;
             elapsedTime.Value = 0f;
-        }   
+        }
     }
 }

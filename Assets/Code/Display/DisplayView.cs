@@ -4,8 +4,7 @@ namespace Display
 {
     public class DisplayView : MonoBehaviour
     {
-        [SerializeField]
-        private UIMapping[] uiMappings;
+        public UIMapping[] uiMappings;
 
         public UIMapping[] UIMappings => uiMappings;
 
