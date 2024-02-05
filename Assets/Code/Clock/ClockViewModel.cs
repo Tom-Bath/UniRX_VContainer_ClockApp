@@ -27,7 +27,7 @@ namespace Clock
                 .AddTo(disposables);
         }
 
-        private void UpdateTimeInView()
+        public void UpdateTimeInView()
         {
             clockView.UpdateUI(clockModel.CurrentTime.Value);
         }
