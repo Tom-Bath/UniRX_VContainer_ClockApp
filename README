@@ -8,16 +8,17 @@ Welcome to the Time App in Unity! This application allows users to track time wi
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [KnownIssues](#known-issues)
 - [Questions](#questions)
 
 ## Installation
 
 To get started with the Time App in Unity, follow these steps:
 
-## Usage
-
 To run the prebuilt executable, follow these steps:
-    1.
+    1. Go to https://drive.google.com/file/d/1r6ZOlexcAoreP2QkaKOzKddFw5x2ynOo/view?usp=sharing
+    2. Download the zippy, extract to your desired location, and open the folder
+    3. Run "Telexistence Clock App" and enjoy! Scale the screen to desired size (or shape)
 
 To use the package in an existing package, follow these steps:
     1. Go to the this link to download the package: 
@@ -40,16 +41,59 @@ To add a new module, follow these steps:
         Generally speaking, please keep the 'View' and 'Model' files independant from ViewModel so they aren't dependant on it.
     3. Expand the test suite to as needed using TDD (Test Driven Development)
 
+## Usage
+
+The top menu has an menu button with an icon for each module:
+    Clock
+    Stopwatch
+    Timer
+
+The clock has no interactive features, but it does display the time in your timezone.
+
+The stopwatch has a play/pause button, a lap button, and a reset button.
+The lap times are in a scrolling window; see the latest laps by scrolling down.
+
+The timer has a play/pause button and a reset button which are always available. 
+The timer also has an input screen which allows you to decide how long the timer will run for. 
+
+## Known Issues
+
+With only a week development time there are some issues outstanding:
+    1. The timer is not exactly realtime due to the implementation using UniRx
+    2. The timer UI behaves in an unusual way when you add more than 20 hours
+    3. The stopwatch UI sizing doesn't scale as well on wide interfaces. Best used in a 720-1280 aspect ratio
+    4. The UI buttons use a sprite art which doesn't scale well with size. It looks different on larger screens
+    5. The UniRx implemetation in some places relies on Imperative Coding.
+
 ## Questions
 
-    1. As we said, this application will be used on iOS/iPad devices. Do you have any concern for UI?
+1. As we said, this application will be used on iOS/iPad devices. Do you have any concern for UI?
 
-x
+    The app has no 'rotate' features implemented at the moment. This might be unpopular with tablet users.
+    The UI scaling doesn't work well on larger screens such as iPads.
+    The buttons might be too small for large fingers on small iOS devices. 
+    There is no 'swipe' or 'zoom' control feature to change between interfaces. Some iOS users may expect this.
 
-    2. How would you refactor the code and/or project after release? What would you prioritize as “must happen” versus “nice to have” changes
+2. How would you refactor the code and/or project after release? What would you prioritize as “must happen” versus “nice to have” changes
 
-x
+    Must Happen:
+    I would fix all bugs mentioned in section (#known-issues)
+    I would implement proper interfaces so that there is even less interdependency in the code; especially the ViewModel scripts.
+    I would add more unit tests, especially the ViewModel scripts which aren't tested (I didn't have time for all tests)
+    I would build & test for non-windows devices.
+    I would use Git LFS for releases, or an app store
+    I would setup a JIRA project for team-collaberation
 
-    3. [Optional] This application will be used on VR application. Share your concern and your opinion on what need to take into account to support it in VR?
+    Nice to have:
+    I might add an alarm module
+    I might allow to add different timezone clocks
+    I might add customisation of UI (Light mode, button-size modifier)
+    I might add automated build & test system such as Bamboo
 
-x
+3. [Optional] This application will be used on VR application. Share your concern and your opinion on what need to take into account to support it in VR?
+
+    The current design uses black background. A VR design may look better with transparent background
+    Using 2d UI button in VR with your hands may be difficult to use. Laser-pointer is best.
+    Choosing a good size might be difficult. I think it should be easy to use at same time as other applications.
+    Reading small letters is difficult in VR. Good font-size and font will be very important for users. 
+
