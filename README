@@ -16,7 +16,29 @@ To get started with the Time App in Unity, follow these steps:
 
 ## Usage
 
-xx
+To run the prebuilt executable, follow these steps:
+    1.
+
+To use the package in an existing package, follow these steps:
+    1. Go to the this link to download the package: 
+    2. Open your project, Assets-> Import Package-> Custom Package, then find the unitypackage in your downloads folder
+    3. Import the entire package unless you already have TMPro or UniRX installed
+    4. Go to package folder in explorer, find the "manifest.json" file and add:
+              "jp.hadashikick.vcontainer": "https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.14.0",
+    5. Open the bootstrap scene to see it working. I suggest creating a custom view size via
+        Game View-> Free Aspect-> Add-> Width 9 Height 16
+    6. Run the project! It should work at this stage. 
+
+To add a new module, follow these steps:
+    1. You will need to create the lifetimescope file, and the three parts of the MVVM architecture
+        For example, an 'alarm' module might have:
+            AlarmLifetimeScope.cs   For Vcontainer DI
+            AlarmModel.cs           For use-case code
+            AlarmView.cs            For UI related code
+            AlarmViewModel.cs       For connecting the model and view code, using UniRX
+    2. Unfortunately, I didn't have time to develop a full interface system. 
+        Generally speaking, please keep the 'View' and 'Model' files independant from ViewModel so they aren't dependant on it.
+    3. Expand the test suite to as needed using TDD (Test Driven Development)
 
 ## Questions
 
