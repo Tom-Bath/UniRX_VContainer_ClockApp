@@ -70,9 +70,10 @@ With only a week development time there are some issues outstanding:
 1. As we said, this application will be used on iOS/iPad devices. Do you have any concern for UI?
 
     The app has no 'rotate' features implemented at the moment. This might be unpopular with tablet users.
-    The UI scaling doesn't work well on larger screens such as iPads.
+    The UI scaling doesn't work well on larger screens such as iPads, but this could be improved in the future.
     The buttons might be too small for large fingers on small iOS devices. 
     There is no 'swipe' or 'zoom' control feature to change between interfaces. Some iOS users may expect this.
+    Currently the app scales all UI automatically, but text can get really big. Maybe setting lower max size is a good idea.
 
 2. How would you refactor the code and/or project after release? What would you prioritize as “must happen” versus “nice to have” changes
 
